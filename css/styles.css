@@ -18,6 +18,11 @@
   --secondary-background: #f5f4fa;
 }
 
+/* візуальні контури для усіх елементів */
+* {
+	outline: 2px solid #B0C4DE;
+}
+
 body {
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
