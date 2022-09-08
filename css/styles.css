@@ -20,7 +20,23 @@
 
 /* візуальні контури для усіх елементів */
 * {
-	outline: 2px solid #B0C4DE;
+  outline: 2px solid #b0c4de;
+}
+
+/* скидання відступів для елементів */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
 }
 
 body {
