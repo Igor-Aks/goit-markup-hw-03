@@ -70,6 +70,7 @@ a {
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -85,14 +86,14 @@ a {
 
 /* текст в хедері */
 .site-nav {
-  display: flex;
-  /* flex-wrap: nowrap; */
   color: var(--primary-text-color);
   font-size: 14px;
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
   text-align: left;
+
+  display: flex;
   padding-left: 93px;
 }
 
@@ -134,6 +135,11 @@ a {
   margin-right: auto;
 }
 
+/* розмір блоку "Герой" */
+.hero-section .section {
+  width: 1600px;
+}
+
 /* текст в герої */
 .hero-text {
   color: var(--primary-white-color);
@@ -143,6 +149,7 @@ a {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -151,7 +158,6 @@ a {
 
 /* кнопка "замовити послугу" */
 .action-button {
-  display: block;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-family: Roboto;
@@ -160,6 +166,8 @@ a {
   line-height: 1.8;
   letter-spacing: 0.06em;
   text-align: center;
+
+  display: block;
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
@@ -176,9 +184,13 @@ a {
 }
 
 .features,
-.our-projects-section,
-.what-we-do {
+.our-projects-section {
   background-color: var(--primary-background);
+}
+
+/* розмір секції "особливості" */
+.features .sections {
+  width: 1170px;
 }
 
 /* заголовки в секції "особливості" */
@@ -190,6 +202,9 @@ a {
   letter-spacing: 0.03em;
   text-align: left;
   text-transform: uppercase;
+
+  width: 270px;
+  margin-bottom: 10px;
 }
 /* текст в параграфі "особливості" */
 .features-paragraph {
@@ -198,10 +213,40 @@ a {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
+  text-align: left;
+
+  width: 270px;
 }
 
-/* заголовки "чим ми займаємося" та "наша команда" */
-.what-we-do,
+/* розмір секції "чим ми займаємося" */
+.what-we-do .section {
+  width: 1170px;
+}
+
+/* заголовки "чим ми займаємося" */
+.what-we-do-list {
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  min-width: 366px;
+  margin-bottom: 50px;
+}
+
+/* розмір секції "наша команда" */
+.our-team .section {
+  width: 1170px;
+}
+
+.our-team {
+  background-color: var(--secondary-background);
+}
+
+/* заголовки "наша команда" */
+
 .our-team-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -209,10 +254,9 @@ a {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-}
 
-.our-team {
-  background-color: var(--secondary-background);
+  min-width: 264px;
+  /* margin-bottom: 30px; */
 }
 
 /* ім'я та прізвища співробітників */
@@ -223,6 +267,10 @@ a {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+
+  min-width: 129px;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 /* текст опису посади співробітника */
