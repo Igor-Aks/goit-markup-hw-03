@@ -118,6 +118,12 @@ a {
   padding: 32px;
 }
 
+/* параметри усіх секцій */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .hero-section .container {
   width: 1600px;
   padding-left: 452px;
