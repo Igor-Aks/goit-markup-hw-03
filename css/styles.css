@@ -183,14 +183,19 @@ a {
   background-color: #188ce8;
 }
 
-.features,
+/* .features,
 .our-projects-section {
   background-color: var(--primary-background);
-}
+} */
 
-/* розмір секції "особливості" */
+/* розмір секції "особливості"
 .features .sections {
   width: 1170px;
+} */
+
+/* flex для секції "особливості" */
+.features-list {
+  display: flex;
 }
 
 /* заголовки в секції "особливості" */
@@ -203,7 +208,7 @@ a {
   text-align: left;
   text-transform: uppercase;
 
-  width: 270px;
+  /* width: 270px; */
   margin-bottom: 10px;
 }
 /* текст в параграфі "особливості" */
@@ -215,16 +220,21 @@ a {
   letter-spacing: 0.03em;
   text-align: left;
 
-  width: 270px;
+  /* width: 270px; */
 }
 
-/* розмір секції "чим ми займаємося" */
+/* розмір секції "чим ми займаємося"
 .what-we-do .section {
   width: 1170px;
+} */
+
+/* flex для секції "чим ми займаємося" */
+.what-we-do-list {
+  display: flex;
 }
 
 /* заголовки "чим ми займаємося" */
-.what-we-do-list {
+.what-we-do-title {
   color: var(--title-text-color);
   font-size: 36px;
   font-weight: 700;
@@ -232,17 +242,22 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
 
-  min-width: 366px;
+  /* min-width: 366px; */
   margin-bottom: 50px;
 }
 
 /* розмір секції "наша команда" */
-.our-team .section {
+/* .our-team .section {
   width: 1170px;
-}
+} */
 
 .our-team {
   background-color: var(--secondary-background);
+}
+
+/* flex для секції "наша команда" */
+.our-team-list {
+  display: flex;
 }
 
 /* заголовки "наша команда" */
@@ -296,6 +311,11 @@ a {
   overflow: hidden;
 }
 
+/* робимо flex для кнопок фільтра */
+.filter-list {
+  display: flex;
+}
+
 /* кнопки фильтра */
 .filter-button {
   color: var(--primary-text-color);
@@ -314,6 +334,11 @@ a {
   background-color: var(--accent-color);
 }
 
+/* flex для секціх "наші проекти" */
+.our-projects-list {
+  display: flex;
+}
+
 /* заголовки в секції "наші проекти" */
 .our-projects {
   color: var(--title-text-color);
@@ -321,7 +346,9 @@ a {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
-  /* text-align: left; */
+  
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 /* текст в параграфах "наші проекти"*/
@@ -331,6 +358,10 @@ a {
   line-height: 1.9;
   letter-spacing: 0.03em;
   text-align: left;
+}
+
+.logo .studio-white {
+  display: block;
 }
 
 /* колір адреси (посилання на мапу) в футері*/
@@ -350,7 +381,6 @@ a {
   font-weight: 400;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  /* text-align: left; */
   font-style: normal;
 }
 
@@ -363,6 +393,16 @@ a {
 .map-link-color:focus {
   color: #2196f3;
 }
+
+.map-link-color {
+  display: block;
+  margin-top: 20px;
+}
+
+/* .nav-link .address-footer {
+  display: block;
+  margin-top: 9px;
+} */
 
 /* колір фону в героя та футера */
 .hero-section,
