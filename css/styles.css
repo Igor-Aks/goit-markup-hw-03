@@ -64,12 +64,15 @@ ul {
 }
 
 a {
+  /* display: block; */
   text-decoration: none;
   color: inherit;
 }
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -80,9 +83,11 @@ img {
   line-height: 1.2;
   letter-spacing: 0.03em;
 
-  display: block;
-  padding-top: 25px;
-  padding-bottom: 25px;
+  /* display: block; */
+  /* padding-top: 25px;
+  padding-bottom: 25px; */
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 /* колір першої частини логотипу */
 .accent {
@@ -180,6 +185,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 200px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   min-width: 216px;
@@ -223,6 +229,10 @@ img {
   /* width: 270px; */
 }
 
+.what-we-do {
+  padding-top: 0;
+}
+
 /* flex для секції "what we do" */
 .what-we-do-list {
   display: flex;
@@ -242,18 +252,25 @@ img {
   margin-bottom: 50px;
 }
 
-.our-team {
+.team {
   background-color: var(--secondary-background);
 }
 
 /* flex для секції "наша команда" */
-.our-team-list {
+.team-list {
   display: flex;
   justify-content: center;
+  gap: 30px;
+}
+
+.team-worker {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 /* заголовки "наша команда" */
-.our-team-title {
+.team-title {
   color: var(--title-text-color);
   font-size: 36px;
   font-weight: 700;
@@ -262,7 +279,7 @@ img {
   text-align: center;
 
   min-width: 264px;
-  /* margin-bottom: 30px; */
+  margin-bottom: 30px;
 }
 
 /* ім'я та прізвища співробітників */
@@ -274,18 +291,24 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
 
-  min-width: 129px;
-  margin-top: 30px;
+  /* min-width: 129px; */
   margin-bottom: 10px;
 }
 
 /* текст опису посади співробітника */
-.worker-paragraph {
+.worker-post {
   color: var(--paragraph-color);
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+
+  /* margin-bottom: 30px; */
+}
+
+/* div для опису працівника */
+.worker-description {
+  padding: 30px 10px;
 }
 
 /* приховуємо заголовок "наші проекти" */
@@ -305,7 +328,16 @@ img {
 /* робимо flex для кнопок фільтра */
 .filter-list {
   display: flex;
+  justify-content: center;
+  gap: 10px;
 }
+
+/* .filter-button {
+  padding: 5px 25px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+} */
 
 /* кнопки фильтра */
 .filter-button {
@@ -317,6 +349,10 @@ img {
   line-height: 1.6;
   letter-spacing: 0.03em;
   text-align: center;
+
+  margin-bottom: 50px;
+  padding: 5px 25px;
+  border-radius: 4px;
 }
 
 .filter-button:hover,
@@ -325,9 +361,17 @@ img {
   background-color: var(--accent-color);
 }
 
-/* flex для секціх "наші проекти" */
+/* flex для секцій "наші проекти" */
 .our-projects-list {
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* div для опису проекта */
+.project-description {
+  margin: 20px 24px;
+  /* margin-bottom: 20px; */
 }
 
 /* заголовки в секції "наші проекти" */
@@ -338,8 +382,10 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin-bottom: 5px;
+
+  /* margin-top: 20px;
+  margin-bottom: 4px; */
 }
 
 /* текст в параграфах "наші проекти"*/
@@ -351,10 +397,35 @@ img {
   text-align: left;
 }
 
-.logo .studio-white {
+/* .logo .studio-white {
   display: block;
-  /* padding-top: 60px; */
+  margin-top: 60px;
+} */
+
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
+
+/* "studio" білим кольором в футері */
+.logo-white {
+  font-family: 'Raleway', sans-serif;
+  color: var(--primary-text-color);
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+
+  /* display: block; */
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+/* "studio" білим кольором в футері */
+/* .logo-white {
+  color: var(--primary-white-color);
+} */
 
 /* колір адреси (посилання на мапу) в футері*/
 .map-link-color {
@@ -400,9 +471,4 @@ img {
 .hero,
 .footer {
   background-color: var(--hero-footer-background);
-}
-
-/* "studio" білим кольором в футері */
-.studio-white {
-  color: var(--primary-white-color);
 }
