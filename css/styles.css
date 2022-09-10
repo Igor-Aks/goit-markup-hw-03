@@ -68,6 +68,10 @@ a {
   color: inherit;
 }
 
+img {
+  display: block;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   color: #212121;
@@ -141,9 +145,9 @@ a {
 }
 
 /* розмір блоку "Герой" */
-.hero .section {
+/* .hero .section {
   width: 1600px;
-}
+} */
 
 /* текст в герої */
 .hero-title {
@@ -158,7 +162,7 @@ a {
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 696px;
+  max-width: 700px;
 }
 
 /* кнопка "замовити послугу" */
@@ -170,7 +174,6 @@ a {
   font-weight: 700;
   line-height: 1.8;
   letter-spacing: 0.06em;
-  text-align: center;
 
   display: block;
   padding: 10px 32px;
@@ -188,19 +191,10 @@ a {
   background-color: #188ce8;
 }
 
-/* .features,
-.our-projects-section {
-  background-color: var(--primary-background);
-} */
-
-/* розмір секції "особливості"
-.features .sections {
-  width: 1170px;
-} */
-
 /* flex для секції "особливості" */
 .features-list {
   display: flex;
+  gap: 10px;
 }
 
 /* заголовки в секції "особливості" */
@@ -216,6 +210,7 @@ a {
   /* width: 270px; */
   margin-bottom: 10px;
 }
+
 /* текст в параграфі "особливості" */
 .features-post {
   color: var(--paragraph-color);
@@ -228,17 +223,14 @@ a {
   /* width: 270px; */
 }
 
-/* розмір секції "чим ми займаємося"
-.what-we-do .section {
-  width: 1170px;
-} */
-
-/* flex для секції "чим ми займаємося" */
+/* flex для секції "what we do" */
 .what-we-do-list {
   display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
-/* заголовки "чим ми займаємося" */
+/* заголовки "what we do" */
 .what-we-do-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -247,14 +239,8 @@ a {
   letter-spacing: 0.03em;
   text-align: center;
 
-  /* min-width: 366px; */
   margin-bottom: 50px;
 }
-
-/* розмір секції "наша команда" */
-/* .our-team .section {
-  width: 1170px;
-} */
 
 .our-team {
   background-color: var(--secondary-background);
@@ -263,10 +249,10 @@ a {
 /* flex для секції "наша команда" */
 .our-team-list {
   display: flex;
+  justify-content: center;
 }
 
 /* заголовки "наша команда" */
-
 .our-team-title {
   color: var(--title-text-color);
   font-size: 36px;
@@ -369,10 +355,6 @@ a {
   display: block;
   /* padding-top: 60px; */
 }
-
-/* .footer {
-	padding-top: 60px;
-} */
 
 /* колір адреси (посилання на мапу) в футері*/
 .map-link-color {
