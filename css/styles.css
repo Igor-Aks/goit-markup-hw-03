@@ -373,6 +373,10 @@ border-radius: 4px; */
   gap: 30px;
 }
 
+.our-projects-item {
+  border: 1px solid #eeeeee;
+}
+
 /* div для опису проекта */
 .project-description {
   margin: 20px 24px;
@@ -461,4 +465,3 @@ border-radius: 4px; */
 .footer-link-address:focus {
   color: var(--accent-color);
 }
-
