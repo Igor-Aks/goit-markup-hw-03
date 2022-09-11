@@ -454,15 +454,11 @@ border-radius: 4px; */
 
 .map-link:hover,
 .map-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
-/* .map-link-color {
-  display: block;
-  margin-top: 20px;
-} */
+.footer-link-address:hover,
+.footer-link-address:focus {
+  color: var(--accent-color);
+}
 
-/* .nav-link .address-footer {
-  display: block;
-  margin-top: 9px;
-} */
