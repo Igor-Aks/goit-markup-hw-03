@@ -376,6 +376,7 @@ border-radius: 4px; */
 
 .our-projects-item {
   border: 1px solid #eeeeee;
+  width: 370px;
 }
 
 /* div для опису проекта */
