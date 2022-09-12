@@ -370,13 +370,14 @@ border-radius: 4px; */
 /* flex для секцій "наші проекти" */
 .our-projects-list {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
 }
 
 .our-projects-item {
   border: 1px solid #eeeeee;
-  width: 370px;
+  /* width: 370px; */
 }
 
 /* div для опису проекта */
