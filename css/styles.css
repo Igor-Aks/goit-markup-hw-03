@@ -96,7 +96,7 @@ body {
   color: var(--accent-color);
 }
 
-.main-nav {
+.nav {
   display: flex;
   align-items: center;
 }
@@ -120,7 +120,6 @@ body {
   font-weight: 500;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  /* text-align: center; */
 
   display: flex;
   margin-left: 93px;
@@ -128,7 +127,7 @@ body {
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* маркер поточної сторінки */
@@ -136,17 +135,48 @@ body {
   color: var(--accent-color);
 }
 
-/* колір тексту пошта та телефон в хедері*/
-.header-address-item {
-  color: var(--paragraph-color);
-}
+/* пошта та номер телефону в хедері */
+.header-address-list {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
 
-/* відсуваю пошту та номер телефона в хедері якомога правіше */
-.mail-phone {
+  display: flex;
   margin-left: auto;
 }
 
+/* колір тексту пошта та телефон в хедері*/
+.header-address-item {
+  color: var(--paragraph-color);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+
+  display: flex;
+}
+
+/* міняю колір тексту пошта і номер телефону в хедері та збільшую розмір клікабельного сектору */
+.header-address-link {
+  color: var(--paragraph-color);
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: var(--accent-color);
+}
+
+/* прибираю крайню геометрію для пошти в хедері*/
+.header-address-list .header-address-item + .header-address-item {
+  margin-left: 50px;
+}
+
 .hero {
+  background-color: var(--hero-footer-background);
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
@@ -154,9 +184,9 @@ body {
 }
 
 /* колір фону hero */
-.hero {
+/* .hero {
   background-color: var(--hero-footer-background);
-}
+} */
 
 /* текст в герої */
 .hero-title {
@@ -432,7 +462,7 @@ border-radius: 4px; */
 }
 
 /* колір тексту пошта та телефон в футері*/
-.footer-link-address {
+.footer-address-link {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   font-weight: 400;
@@ -454,7 +484,7 @@ border-radius: 4px; */
   color: var(--accent-color);
 }
 
-.footer-link-address:hover,
-.footer-link-address:focus {
+.footer-address-link:hover,
+.footer-address-link:focus {
   color: var(--accent-color);
 }
