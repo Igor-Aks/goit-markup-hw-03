@@ -19,9 +19,9 @@
 }
 
 /* візуальні контури для усіх елементів */
-/* * {
+* {
   outline: 2px solid #b0c4de;
-} */
+}
 
 /* скидання відступів для елементів */
 h1,
@@ -370,19 +370,29 @@ border-radius: 4px; */
 /* flex для секцій "наші проекти" */
 .our-projects-list {
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   flex-wrap: wrap;
   gap: 30px;
+  /* padding: 0; */
+  /* margin-right: 30px; */
+  /* margin-bottom: 30px; */
 }
 
 .our-projects-item {
-  border: 1px solid #eeeeee;
-  width: 370px;
+  /* width: 370px; */
+  /* border: 1px solid #EEEEEE; */
+  flex-basis: calc((100% - 60px) / 3);
+  /* margin-right: 30px; */
 }
 
 /* div для опису проекта */
 .project-description {
   padding: 20px 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  background-color: var(--primary-white-color);
+  /* flex-basis: calc((100% - 60px) / 3); */
   /* margin-bottom: 20px; */
 }
 
