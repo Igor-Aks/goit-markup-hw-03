@@ -19,9 +19,9 @@
 }
 
 /* візуальні контури для усіх елементів */
-* {
+/* * {
   outline: 2px solid #b0c4de;
-}
+} */
 
 /* скидання відступів для елементів */
 h1,
@@ -62,7 +62,7 @@ img {
 
 /* параметри  контейнеру */
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
