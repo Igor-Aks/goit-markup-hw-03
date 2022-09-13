@@ -109,7 +109,7 @@ body {
 }
 
 /* прибираю крайню геометрію */
-.nav-list .item + .item {
+.nav-list .nav-list-item + .nav-list-item {
   margin-left: 50px;
 }
 
