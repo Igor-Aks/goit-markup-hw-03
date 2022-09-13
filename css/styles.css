@@ -137,7 +137,7 @@ body {
 }
 
 /* колір тексту пошта та телефон в хедері*/
-.header-address-text {
+.header-address-item {
   color: var(--paragraph-color);
 }
 
